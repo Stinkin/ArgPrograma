@@ -5,9 +5,56 @@
   --color-texto-a: red;
   --color-texto-b: blue;
   --color-texto-c: green;
+  --color-texto-off: grey;
   --color-fondo: white;
   --color-borde: gray;
+  --color-boton-hover: #0099cc;
+  --color-boton-fondo: #33b5e5;
+  --color-boton: white; 
 }
+
+/*---------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0;
+  margin-bottom: 7px;
+}
+
+/*--------------------------*/
 
 html {
   font-family: "Roboto", sans-serif;
@@ -18,37 +65,57 @@ h1 {
   font-size: 3em;
   border: 10px dotted var(--color-borde);
   padding: 5px;
-  margin: 2px;
+  margin: 5px;
 }
 
+.boton {
+  color: var(--color-boton);
+  background-color: var(--color-boton-fondo);
+  width: 100%;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.boton:hover {
+  background-color: var(--color-boton-hover);
+}
+
+.botonTitulo:hover{
+  background-color: var(--color-boton-fondo);
+}
 section {
-  width: 70%;
   border: 10px dotted var(--color-borde);
+  display: block;
+  font-size: 2em;
+  color: var(--color-texto);
+  padding: 5px;
+  margin: 5px;
 }
 
 aside {
-  width: 30%;
   border: 10px dotted var(--color-borde);
+  padding: 5px;
+  margin: 5px;
 }
 
-.a {
-  display: block;
-  font-size: 2em;
+.quimico {
   color: var(--color-texto-a);
 }
 
-.b {
-  display: block;
-  font-size: 2em;
+.barman {
   color: var(--color-texto-b);
 }
 
-.c {
-  display: block;
-  font-size: 2em;
+.shaman {
   color: var(--color-texto-c);
 }
 
 .none {
-    display: none;
+  font-size: 0.5em;
+  color: var(--color-texto-off);
+  border: 2px dashed var(--color-borde);
 }

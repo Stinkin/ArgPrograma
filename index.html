@@ -8,11 +8,12 @@
     <title>Hola, soy Juan</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo2.css">
 
     <!-- Open Graph-->
     <meta property="og:title" content="Juan Scholls" />
     <meta property="og:type" content="profile" />
-    <meta property="og:image" content="/img/juan.jpg" />
+    <meta property="og:image" content="https://stinkin.github.io/ArgPrograma/img/juan.jpg" />
     <meta property="og:image:alt" content="Retrato de Juan" />
     <meta property="og:locale" content="es_AR" />
     <meta property="og:url" content="" />
@@ -22,66 +23,116 @@
 
 <body>
     <h1>Hola Argentina!</h1>
-    <header></header>
+    <header>
+        Nombre<br>
+        Foto<br>
+        blah<br>
+        blah<br>
+        blah<br>
+        blah<br>
+    </header>
     <nav>
-        <form action="" id="variantes">
-            <p>Filtrar datos por:</p>
-            <input type="button" id="qco" value="Quimico" onclick="clickQco()">
-            <input type="button" id="bar" value="Barman" onclick="clickBar()">
-            <input type="button" id="sham" value="Shaman" onclick="clickSham()">
-            <input type="button" id="all" value="Todos" onclick="clickAll()">
-        </form>
-
-
+        <div class="row">
+            <div class="col-3">
+                <input type="button" id="all" class="boton" value="Perfil General" onclick="clickParam('.parte')">
+            </div>
+            <div class="col-3">
+                <input type="button" id="qco" class="boton" value="Perfil Quimico" onclick="clickParam('.quimico')">
+            </div>
+            <div class="col-3">
+                <input type="button" id="bar" class="boton" value="Perfil Barman" onclick="clickParam('.barman')">
+            </div>
+            <div class="col-3">
+                <input type="button" id="sham" class="boton" value="Perfil Shaman" onclick="clickParam('.shaman')">
+            </div>
+        </div>
     </nav>
-    <aside>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate id laudantium nam porro, quisquam aut
-        veritatis voluptate atque qui mollitia magnam repellendus praesentium! Iste incidunt inventore suscipit tempore
-        quo exercitationem.
-    </aside>
-    <section class="parte a">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium tempore
-        velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error, obcaecati
-        dicta.
-    </section>
-    <section class="parte b">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium amet
-        accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore neque
-        cumque debitis.
-    </section>
-    <section class="parte c">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit optio cumque
-        officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores dolor.
-    </section>
-    <section class="parte a">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium tempore
-        velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error, obcaecati
-        dicta.
-    </section>
-    <section class="parte b">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium amet
-        accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore neque
-        cumque debitis.
-    </section>
-    <section class="parte c">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit optio cumque
-        officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores dolor.
-    </section>
-    <section class="parte a">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium tempore
-        velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error, obcaecati
-        dicta.
-    </section>
-    <section class="parte b">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium amet
-        accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore neque
-        cumque debitis.
-    </section>
-    <section class="parte c">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit optio cumque
-        officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores dolor.
-    </section>
 
+    <div class="row">
+        <div class="col-2 menu">
+            <ul>
+                <li><input type="button" id="all" class="boton" value="Perfil General" onclick="clickParam('.parte')">
+                </li>
+                <li><input type="button" id="qco" class="boton" value="Perfil Quimico" onclick="clickParam('.quimico')">
+                </li>
+                <li><input type="button" id="bar" class="boton" value="Perfil Barman" onclick="clickParam('.barman')">
+                </li>
+                <li><input type="button" id="sham" class="boton" value="Perfil Shaman" onclick="clickParam('.shaman')">
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-8">
+            <section class="fija">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
+                tempore
+                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
+                obcaecati
+                dicta.
+            </section>
+            <section class="parte quimico">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
+                tempore
+                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
+                obcaecati
+                dicta.
+            </section>
+            <section class="parte barman">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium
+                amet
+                accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore
+                neque
+                cumque debitis.
+            </section>
+            <section class="parte shaman">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit
+                optio cumque
+                officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores
+                dolor.
+            </section>
+            <section class="parte quimico">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
+                tempore
+                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
+                obcaecati
+                dicta.
+            </section>
+            <section class="parte barman">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium
+                amet
+                accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore
+                neque
+                cumque debitis.
+            </section>
+            <section class="parte shaman">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit
+                optio cumque
+                officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores
+                dolor.
+            </section>
+            <section class="parte quimico">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
+                tempore
+                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
+                obcaecati
+                dicta.
+            </section>
+            <section class="parte barman">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium
+                amet
+                accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore
+                neque
+                cumque debitis.
+            </section>
+            <section class="parte shaman">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit
+                optio cumque
+                officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores
+                dolor.
+            </section>
+        </div>
+        <div class="col-2"></div>
+    </div>
     <footer></footer>
     <script src="js/script.js"></script>
 </body>
