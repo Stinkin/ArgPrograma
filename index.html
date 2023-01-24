@@ -22,14 +22,21 @@
 </head>
 
 <body>
-    <h1>Hola Argentina!</h1>
+    <h1 class="centrado">Juan Nicholas Scholls</h1>
     <header>
-        Nombre<br>
-        Foto<br>
-        blah<br>
-        blah<br>
-        blah<br>
-        blah<br>
+        <div class="row">
+            <div class="col-6 centrado">
+                <img class="perfil" src="/img/Juan_Completo.jpg" alt="Juan de Cuerpo completo">
+            </div>
+            <div class="col-6">
+                Nombre<br>
+                Foto<br>
+                blah<br>
+                blah<br>
+                blah<br>
+                blah<br>
+            </div>
+        </div>
     </header>
     <nav>
         <div class="row">
@@ -49,33 +56,42 @@
     </nav>
 
     <div class="row">
-        <div class="col-2 menu">
-            <ul>
-                <li><input type="button" id="all" class="boton" value="Perfil General" onclick="clickParam('.parte')">
-                </li>
-                <li><input type="button" id="qco" class="boton" value="Perfil Quimico" onclick="clickParam('.quimico')">
-                </li>
-                <li><input type="button" id="bar" class="boton" value="Perfil Barman" onclick="clickParam('.barman')">
-                </li>
-                <li><input type="button" id="sham" class="boton" value="Perfil Shaman" onclick="clickParam('.shaman')">
-                </li>
-            </ul>
-        </div>
-
+        <div class="col-2 menu"></div>
         <div class="col-8">
-            <section class="fija">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
-                tempore
-                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
-                obcaecati
-                dicta.
+            <section class="parte quimico">
+                <dl>
+                    <dt>Tecnico Quimico</dt>
+                    <dd>E.T.I.L.A.H. 9</dd>
+                    <dd>Año:1995</dd>
+                    <dd>Titulo Secundario, validez nacional.</dd>
+                </dl>
+            </section>
+            <section class="parte barman">
+                <dl>
+                    <dt>Bartender Internacional</dt>
+                    <dd>Instituto Argentino de Barman</dd>
+                    <dd>Año:1997</dd>
+                    <dd>Curso Presencial de 3 meses. 120hs catedra</dd>
+                    <dd>Mixologia, Cocteleria Basica, Administracion de Barra</dd>
+                </dl>
+            </section>
+            <section class="parte shaman">
+                <dl>
+                    <dt>Chakras: Alineacion y Balanceo</dt>
+                    <dd>Ashram Arhanta - Rishikesh - India</dd>
+                    <dd>Año:2001</dd>
+                    <dd>Curso Presencial. Teorico/Practico 160hs</dd>
+                    <dd>Control de Balance, Conexion Astral, Reconexion de Chakras</dd>
+                </dl>
             </section>
             <section class="parte quimico">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
-                tempore
-                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
-                obcaecati
-                dicta.
+                <dl>
+                    <dt>Licenciatura en Ciencias Quimicas</dt>
+                    <dd>Universidad de Buenos Aires</dd>
+                    <dd>Año:1996/1999</dd>
+                    <dd>Aprobado el 3er año. Plan 1991</dd>
+                    <dd>Finales: 20/32</dd>
+                </dl>
             </section>
             <section class="parte barman">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium
@@ -91,31 +107,14 @@
                 dolor.
             </section>
             <section class="parte quimico">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
-                tempore
-                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
-                obcaecati
-                dicta.
-            </section>
-            <section class="parte barman">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium
-                amet
-                accusantium quaerat minus sed eum. Perferendis aliquam facere inventore ratione aperiam minus labore
-                neque
-                cumque debitis.
-            </section>
-            <section class="parte shaman">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam! Itaque deserunt reprehenderit
-                optio cumque
-                officiis ut atque unde laboriosam molestiae, facere suscipit inventore in quod voluptatum qui asperiores
-                dolor.
-            </section>
-            <section class="parte quimico">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, reiciendis quia, ducimus laudantium
-                tempore
-                velit deleniti debitis suscipit ipsa qui deserunt asperiores sunt! Amet tempora incidunt a error,
-                obcaecati
-                dicta.
+                <dl>
+                    <dt>Analista de Laboratorio</dt>
+                    <dd>Laboratorio Central AASA</dd>
+                    <dd>Año:1999</dd>
+                    <dd>Contrato de Formacion Profesional</dd>
+                    <dd>Empresa a cargo del servicio de Agua y Saneamiento CABA y AMBA</dd>
+                    <dd>Ejecucion de tecnicas de Aniones, Detergentes y UV254</dd>
+                </dl>
             </section>
             <section class="parte barman">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nam exercitationem assumenda laudantium

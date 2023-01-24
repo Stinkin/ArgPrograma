@@ -13,7 +13,7 @@
   --color-boton: white; 
 }
 
-/*---------------------------------------*/
+/*-------------RWD--------------------------*/
 * {
   box-sizing: border-box;
 }
@@ -54,7 +54,7 @@
   margin-bottom: 7px;
 }
 
-/*--------------------------*/
+/*---------FIN RWD-----------------*/
 
 html {
   font-family: "Roboto", sans-serif;
@@ -63,9 +63,16 @@ html {
 
 h1 {
   font-size: 3em;
-  border: 10px dotted var(--color-borde);
   padding: 5px;
   margin: 5px;
+}
+
+.perfil {
+  width: 30%;
+}
+
+.centrado {
+  text-align: center;
 }
 
 .boton {
@@ -88,7 +95,7 @@ h1 {
   background-color: var(--color-boton-fondo);
 }
 section {
-  border: 10px dotted var(--color-borde);
+  border: 10px solid var(--color-borde);
   display: block;
   font-size: 2em;
   color: var(--color-texto);
