@@ -7,7 +7,7 @@ function clickParam(param) {
     col.classList.add("none");
   });
   
-  cols2.forEach((col2) => {
-    col2.classList.remove("none");
+  cols2.forEach((col) => {
+    col.classList.remove("none");
   });
 }

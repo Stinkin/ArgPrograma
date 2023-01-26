@@ -6,12 +6,19 @@
   --color-texto-b: blue;
   --color-texto-c: green;
   --color-texto-off: grey;
-  --color-fondo: white;
-  --color-borde: gray;
+  --color-fondo: pink;
+  --color-borde: grey;
   --color-boton-hover: #0099cc;
   --color-boton-fondo: #33b5e5;
-  --color-boton: white; 
+  --color-boton-texto: white; 
 }
+
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
 
 /*-------------RWD--------------------------*/
 * {
@@ -42,33 +49,26 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 0;
-  margin-bottom: 7px;
-}
-
 /*---------FIN RWD-----------------*/
 
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   padding: 5px;
   margin: 5px;
 }
 
+body {
+  background-color: var(--color-fondo);
+}
+
+.titulo {
+  border: 10px var(--color-borde);
+  background-color:var(--color-borde) ;
+  border-radius: 50px 25px;
+}
+
 .perfil {
-  width: 30%;
+  width: 80%;
 }
 
 .centrado {
@@ -76,7 +76,7 @@ h1 {
 }
 
 .boton {
-  color: var(--color-boton);
+  color: var(--color-boton-texto);
   background-color: var(--color-boton-fondo);
   width: 100%;
   border: none;
@@ -97,7 +97,7 @@ h1 {
 section {
   border: 10px solid var(--color-borde);
   display: block;
-  font-size: 2em;
+  font-size: 1em;
   color: var(--color-texto);
   padding: 5px;
   margin: 5px;
@@ -122,7 +122,7 @@ aside {
 }
 
 .none {
-  font-size: 0.5em;
+  font-size: 0.25em;
   color: var(--color-texto-off);
   border: 2px dashed var(--color-borde);
 }
