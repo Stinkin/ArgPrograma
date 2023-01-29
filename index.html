@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=G, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola, soy Juan</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -22,21 +22,23 @@
 </head>
 
 <body>
-
     <header>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-2 hide-s"></div>
+            <div class="col-8 col-s-12">
                 <h1 class="centrado titulo">Juan Nicholas Scholls</h1>
             </div>
-            <div class="col-2"></div>
+            <div class="col-2 hide-s"></div>
         </div>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-4 centrado">
+            <div class="col-2 hide-s"></div>
+            <div class="col-4 col-s-5 centrado">
+                <br>
                 <img class="perfil" src="img/juanLateral.jpg" alt="Juan de Cuerpo completo">
+                <br>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-s-5">
+                <br>
                 Hola soy <strong>Juan Nicholas Scholls</strong><br>
                 De nacionalidad <strong>Argentino</strong>, hincha de River<br>
                 Naci el <strong>13 de Abril de 1977</strong> en CABA<br>
@@ -46,34 +48,36 @@
                 En mi camino hice de todo, estudiar, trabajar, aprender. Siempre con la mejor predisposicion y una
                 sonrisa, en este breve resumen les dejo algunos puntos mas relvantes para ser una parte de su proyecto
                 laboral.<br>
-                Me destaco en el <strong>trato humano</strong>a usuarios, clientes, socios y empleados.<br>
-                Hablo con fluidez <strong>Español</strong> e <strong>Ingles</strong> son dos idiomas sin problemas. Entiendo y me comunico en <strong>Gales</strong> y  <strong>Frances</strong> <br>
+                Me destaco en el <strong>trato humano</strong> a usuarios, clientes, socios y empleados.<br>
+                Hablo <strong>Español</strong> e <strong>Ingles</strong> con fluidez, sin problemas. Entiendo y me
+                comunico en <strong>Gales</strong> y <strong>Frances</strong> <br>
+                <br>
             </div>
-            <div class="col-2"></div>
+            <div class="col-2 hide-s"></div>
         </div>
     </header>
     <nav>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-2">
+            <div class="col-2 hide-s""></div>
+            <div class=" col-2 col-s-3 col-ss-2">
                 <input type="button" id="all" class="boton" value="Perfil General" onclick="clickParam('.parte')">
             </div>
-            <div class="col-2">
+            <div class="col-2 col-s-3 col-ss-2">
                 <input type="button" id="qco" class="boton" value="Perfil Quimico" onclick="clickParam('.quimico')">
             </div>
-            <div class="col-2">
+            <div class="col-2 col-s-3 col-ss-2">
                 <input type="button" id="bar" class="boton" value="Perfil Barman" onclick="clickParam('.barman')">
             </div>
-            <div class="col-2">
+            <div class="col-2 col-s-3 col-ss-2">
                 <input type="button" id="sham" class="boton" value="Perfil Shaman" onclick="clickParam('.shaman')">
             </div>
-            <div class="col-2"></div>
+            <div class="col-2 hide-s"></div>
         </div>
     </nav>
 
     <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+        <div class="col-2 hide-s"></div>
+        <div class="col-8 col-s-12">
             <section class="parte quimico">
                 <dl>
                     <dt>Tecnico Quimico</dt>
@@ -156,7 +160,7 @@
                 </dl>
             </section>
         </div>
-        <div class="col-2"></div>
+        <div class="col-2 hide-s"></div>
     </div>
     <footer></footer>
     <script src="js/script.js"></script>
