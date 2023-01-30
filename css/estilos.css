@@ -2,15 +2,13 @@
 
 :root {
   --color-texto: black;
-  --color-texto-a: red;
-  --color-texto-b: blue;
-  --color-texto-c: green;
   --color-texto-off: grey;
-  --color-fondo: pink;
+  --color-fondo: #beebee;
   --color-borde: grey;
-  --color-boton-hover: #0099cc;
-  --color-boton-fondo: #33b5e5;
-  --color-boton-texto: white; 
+  --color-boton-hover-fondo: #0099cc;
+  --color-boton-hover-texto: white; 
+  --color-boton-fondo: #212b58;
+  --color-boton-texto: white;
 }
 
 
@@ -104,8 +102,9 @@ body {
 
 .titulo {
   border: 10px var(--color-borde);
-  background-color:var(--color-borde) ;
   border-radius: 50px 25px;
+  background-color:var(--color-boton-fondo) ;
+  color:var(--color-fondo);
 }
 
 .perfil {
@@ -122,6 +121,7 @@ body {
 .boton {
   color: var(--color-boton-texto);
   background-color: var(--color-boton-fondo);
+  font-weight: bold;
   width: 100%;
   border: none;
   padding: 15px 5px;
@@ -132,14 +132,15 @@ body {
 }
 
 .boton:hover {
-  background-color: var(--color-boton-hover);
+  color: var(--color-boton-hover-texto);
+  background-color: var(--color-boton-hover-fondo);
 }
 
 .botonTitulo:hover{
   background-color: var(--color-boton-fondo);
 }
 section {
-  border: 10px solid var(--color-borde);
+  border: 10px dashed var(--color-borde);
   display: block;
   font-size: 1em;
   color: var(--color-texto);
@@ -147,26 +148,23 @@ section {
   margin: 5px;
 }
 
-aside {
-  border: 10px dotted var(--color-borde);
-  padding: 5px;
-  margin: 5px;
+dt {
+  font-weight: bold;
 }
-
 .quimico {
-  color: var(--color-texto-a);
+  color: var(--color-texto);
 }
 
 .barman {
-  color: var(--color-texto-b);
+  color: var(--color-texto);
 }
 
 .shaman {
-  color: var(--color-texto-c);
+  color: var(--color-texto);
 }
 
 .none {
   font-size: 0.25em;
   color: var(--color-texto-off);
-  border: 2px dashed var(--color-borde);
+  border: 2px dotted var(--color-borde);
 }
